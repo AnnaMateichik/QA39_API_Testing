@@ -23,7 +23,7 @@ public class RegistrationTests {
 
         int i = (int) (System.currentTimeMillis() / 1000) % 3600;
         AuthRequestDTO requestDTO = AuthRequestDTO.builder()
-                .username("anna"+i+"@mail.com")
+                .username("anna"+i+"@mail.com") // don't get 400 if email without "@"
                 .password("Qq12345$")
                 .build();
 
