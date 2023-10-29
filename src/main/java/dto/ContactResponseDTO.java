@@ -5,17 +5,10 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-@Getter
 @Setter
-@Builder
+@Getter
 @ToString
-public class ErrorDTO {
-
-    int status;
-    String error;
-    Object message;
-//    String path;
-
-
-
+@Builder
+public class ContactResponseDTO {
+    String message;
 }
